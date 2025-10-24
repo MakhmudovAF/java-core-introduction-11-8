@@ -78,8 +78,8 @@ public class ExpensesManager {
 
         for (String category : expensesByCategories.keySet()) {
             double expensesSum = 0;
-            ArrayList<Double> expenses = expensesByCategories.get(category);
-            for (Double expense : expenses) {
+
+            for (Double expense : expensesByCategories.get(category)) {
                 expensesSum += expense;
             }
 
